@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+
+    background-color: rgb(184, 157, 124);
+    background-image: url(canteen.jpg);
+    margin-top: 275px;
+}
+div{
+    background-color: rgb(196, 180, 122);
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 500px;
+
+}

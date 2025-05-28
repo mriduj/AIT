@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Random color Generator</h1>
+    <button id="colorbutton">Generate Color</button>
+    <pid="colorCode">Click the button to get the code</p>
+    </div>
+    <style>
+        body {
+            background-color: rgb(144, 144, 189);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            transition: background-color 0.5s ease;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        div{
+            text-align: center;
+            background-color: rgba(144, 144, 189, 0.8); 
+            padding: 100x; 
+            margin: 500px;
+       
+            margin-top: 150px  ;
+            width: 400px; 
+            height: 200px;
+            
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #colorcode {
+            font-size: 24px;
+            font-weight: 900;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+     function getColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    document.getElementById("colorbutton").addEventListener("click", function() {
+        const newColor = getColor();
+        document.body.style.backgroundColor = newColor;
+        document.getElementById("colorCode").textContent = 'Color: $(newColor)';
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <div>
+        <h1>Idli = Rs.20</h1>
+        <input type="number" name="" id="Idli" placeholder="Quantity">
+        <h2>Dosa = Rs.30</h2>
+        <input type="number" name="" id="Dosa" placeholder="Quantity">
+        <h3>Poori = Rs.40</h3>
+        <input type="number" name="" id="Poori"placeholder="Quantity">
+        <h4>Vada = Rs.20</h4>
+        <input type="number" name="" id="Vada" placeholder="Quantity">
+        <h5>Karabath = Rs.40</h5>
+        <input type="number" name="" id="Karabath" placeholder="Quantity">
+        <h6>Chapathi = Rs.30</h6>
+        <input type="number" name="" id="Chapati" placeholder="Quantity">
+        <h7>Oppma = Rs.40</h7>
+        <input type="number" name="" id="Oppma" placeholder="Quantity">
+        <button onclick="amounttotal()">Enter</button>
+    </div>
+    <script>
+        function amounttotal(){
+            var Idli=document.getElementById("Idli").value;
+            var Dosa=document.getElementById("Dosa").value;
+            var Poori=document.getElementById("Poori").value;
+            var Vada=document.getElementById("Vada").value;
+            var Karabath=document.getElementById("Karabath").value;
+            var Chapathi=document.getElementById("Chapathi").value;
+            var Oppma=document.getElementById("Oppma").value;
+
+            var priceIdli = 20;
+            var priceDosa = 30;
+            var pricePoori = 40;
+            var priceVada = 20;
+            var priceKarabath = 40;
+            var priceChapathi = 30;
+            var priceOppma = 40;
+
+            var total=(Idli*priceIdli)+(Dosa*priceDosa)+(Poori*pricePoori)+(Vada*priceVada)+(Karabath*priceKarabath)+(Chapathi*priceChapathi)+(Oppma*priceoppma);
+
+            alert("The price is = Rs. " +total);
+            
+ 
+
+        }
+
+    </script>
+
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+
+    background-color: bisque;
+    background-image: url(result.avif);
+    margin-top: 275px;
+}
+div{
+    background-color: rgb(221, 202, 134);
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 500px;
+
+}
